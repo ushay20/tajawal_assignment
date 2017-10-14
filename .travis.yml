@@ -1,2 +1,7 @@
 language: csharp
 solution: Hotel_Search.sln
+install:
+  - nuget restore ./Hotel_Search.sln
+  - chmod +x ./packages/xunit.runners.1.9.2/tools/xunit.console.clr4.exe
+script:
+  - xbuild /p:Configuration=Release ./Hotel_Search.sln
