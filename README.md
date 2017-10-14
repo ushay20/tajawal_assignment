@@ -1,16 +1,13 @@
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
-The project is created in visual studio 2017 version using .Net Framework version 4.6.2. It contains following files on the root:
+The project is created in visual studio 2017 version using .Net Framework version 4.6.2. It contains following main files on the root:
 
 1) Hotel_Search (ASP.NET WEB API)
 2) Hotel.Search.Application (C# Class Library)
 3) Hotel_Search_Test (C# Class Library containing Unit Tests for the actions implemented in Hotel_Search project)
 4) packages (package assemblies being usedin all projects)
-5) .travis.yml (file to trigger travis CI)
-6) .coveralls.yml (file to trigger COVERALLS)
-7) Hotel_Search.sln (visual studio solution file)
-8) README.MD
+5) Hotel_Search.sln (visual studio solution file)
+6) README.MD
 
 ## Installation
 
@@ -18,7 +15,7 @@ The project is created in visual studio 2017 version using .Net Framework versio
 2) Run Hotel_Search website
 3) The website will open on port 58550
 
-## API URLs
+## API Sample URLs
 
 1) Search by Name
 
@@ -53,16 +50,13 @@ The project is created in visual studio 2017 version using .Net Framework versio
  - http://localhost:58550/api/hotels/date-range/20-11-2020:25-11-2020/sort/price
 
  
-## Travis CI build badges
+## AppVeyor CI build repo page url
 
-[![Build Status](https://travis-ci.org/ushay20/tajawal_assignment.svg?branch=master)](https://travis-ci.org/ushay20/tajawal_assignment)
+https://ci.appveyor.com/project/ushay20/tajawal-assignment)
 
 
+## Coveralls CI build badge
 
-## Contributors
+[![Coverage Status](https://coveralls.io/repos/github/ushay20/tajawal_assignment/badge.svg?branch=master)](https://coveralls.io/github/ushay20/tajawal_assignment?branch=master)
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
 
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
