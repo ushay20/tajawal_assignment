@@ -62,3 +62,14 @@ D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.Web.xml
 D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.ApplicationInsights.dll
 D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.ApplicationInsights.xml
 D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\System.Web.Entity.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Antlr3.Runtime.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.CSharp.dll
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Antlr3.Runtime.pdb
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.WindowsServer.xml
