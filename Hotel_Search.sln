@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Search", "Hotel_Searc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Search.Application", "Hotel.Search.Application\Hotel.Search.Application.csproj", "{52AD459F-6BD0-4A2F-98DB-67FA8952A793}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_Search_Test", "Hotel_Search_Test\Hotel_Search_Test.csproj", "{966F87E9-50C0-4256-85F7-F885EB1D3325}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{52AD459F-6BD0-4A2F-98DB-67FA8952A793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52AD459F-6BD0-4A2F-98DB-67FA8952A793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52AD459F-6BD0-4A2F-98DB-67FA8952A793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{966F87E9-50C0-4256-85F7-F885EB1D3325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966F87E9-50C0-4256-85F7-F885EB1D3325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966F87E9-50C0-4256-85F7-F885EB1D3325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966F87E9-50C0-4256-85F7-F885EB1D3325}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
