@@ -20,11 +20,44 @@ The project is created in visual studio 2017 version using .Net Framework versio
 
 ## API URLs
 
+1) Search by Name
+
+- Sort By Name:
+- http://localhost:58550/api/hotels/name/media one hotel/sort/name
+
+- Sort By Price:
+- http://localhost:58550/api/hotels/name/media one hotel/sort/price
+
+2) Search by Destination
+
+- Sort By Name:
+- http://localhost:58550/api/hotels/destination/dubai/sort/name
+
+- Sort By Price:
+- http://localhost:58550/api/hotels/destination/dubai/sort/price
+
+3) Search by Price Range:
+
+ - Sort By Name:
+ - http://localhost:58550/api/hotels/price-range/20:100/sort/name
+ 
+ - Sort By Price:
+ - http://localhost:58550/api/hotels/price-range/20:100/sort/price
+ 
+ 4) Search by Date Range:
+ 
+ - Sort By Name:
+ - http://localhost:58550/api/hotels/date-range/20-11-2020:25-11-2020/sort/name
+ 
+ - Sort By Price:
+ - http://localhost:58550/api/hotels/date-range/20-11-2020:25-11-2020/sort/price
+
+ 
+## Travis CI build badges
+
+[![Build Status](https://travis-ci.org/ushay20/tajawal_assignment.svg?branch=master)](https://travis-ci.org/ushay20/tajawal_assignment)
 
 
-## Tests
-
-Describe and show how to run the tests with code examples.
 
 ## Contributors
 
