@@ -61,3 +61,4 @@ D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.Web.dll
 D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.AI.Web.xml
 D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.ApplicationInsights.dll
 D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Personal\Hotel_Search\Hotel_Search\bin\System.Web.Entity.dll

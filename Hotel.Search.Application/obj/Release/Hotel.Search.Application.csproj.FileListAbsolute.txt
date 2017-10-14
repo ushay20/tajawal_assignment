@@ -4,3 +4,4 @@ D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\bin\Release\Newtonsof
 D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\bin\Release\Newtonsoft.Json.xml
 D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\obj\Release\Hotel.Search.Application.dll
 D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\obj\Release\Hotel.Search.Application.pdb
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\obj\Release\Hotel.Search.Application.csprojResolveAssemblyReference.cache
