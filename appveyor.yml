@@ -33,6 +33,6 @@ test_script:
     
     Write-Output $coveralls
     
-    & $coveralls --dynamiccodecoverage -i coverage.coveragexml --useRelativePaths
+    & $coveralls --dynamiccodecoverage -i coverage.coveragexml --repoToken $env:COVERALLS_REPO_TOKEN --useRelativePaths
 
     Push-AppveyorArtifact cov.json
