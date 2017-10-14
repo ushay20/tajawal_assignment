@@ -1,0 +1,6 @@
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\bin\Debug\Hotel.Search.Application.dll
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\bin\Debug\Hotel.Search.Application.pdb
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\obj\Debug\Hotel.Search.Application.dll
+D:\Projects\Personal\Hotel_Search\Hotel.Search.Application\obj\Debug\Hotel.Search.Application.pdb
