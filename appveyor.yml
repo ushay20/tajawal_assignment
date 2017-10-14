@@ -9,7 +9,7 @@ assembly_info:
   assembly_informational_version: '{version}'
 environment:
   COVERALLS_REPO_TOKEN:
-    secure: 9K8FFocCd7JyiMpzW7r1dNlP3jsKrHRWR
+    secure: B1hUSzvTYKhMGtOTPK7RYUwriph84Ragh
 before_build:
   - nuget restore ".\Hotel_Search.sln"
 build:
