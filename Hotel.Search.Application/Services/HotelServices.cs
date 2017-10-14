@@ -58,6 +58,11 @@ namespace Hotel.Search.Application.Services
                         retVal = retVal.Where(a => hotelIds.Contains(a.id));
                     }
                 }
+
+                if (retVal.ToList().Count == 0)
+                {
+                    throw new Exception("no records found");
+                }
             }
 
             return retVal;

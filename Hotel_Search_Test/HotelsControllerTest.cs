@@ -15,8 +15,11 @@ namespace Hotel_Search_Test
         {
             HotelsController hotelsController = new HotelsController();
             IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByName("media one hotel", "name").Data;
-            
+
             Assert.Equal("media one hotel", result.ToList()[0].name.ToLower());
+
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByName("no result", "name").Data;
+            Assert.True(noresult == null);
 
         }
 
@@ -28,6 +31,9 @@ namespace Hotel_Search_Test
 
             Assert.Equal("media one hotel", result.ToList()[0].name.ToLower());
 
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByName("no result", "price").Data;
+            Assert.True(noresult == null);
+
         }
 
         [Fact]
@@ -37,6 +43,9 @@ namespace Hotel_Search_Test
             IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByDest("dubai", "name").Data;
 
             Assert.Equal("dubai", result.ToList()[0].city);
+
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByDest("no result", "name").Data;
+            Assert.True(noresult == null);
 
         }
 
@@ -48,6 +57,9 @@ namespace Hotel_Search_Test
 
             Assert.Equal("dubai", result.ToList()[0].city);
 
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByDest("no result", "price").Data;
+            Assert.True(noresult == null);
+
         }
 
         [Fact]
@@ -57,6 +69,9 @@ namespace Hotel_Search_Test
             IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByPrice("80:100", "name").Data;
             
             Assert.True(result.ToList()[0].price >= 80 && result.ToList()[0].price <= 100);
+
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByPrice("0-0", "name").Data;
+            Assert.True(noresult == null);
         }
 
         [Fact]
@@ -66,6 +81,9 @@ namespace Hotel_Search_Test
             IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByPrice("80:100", "price").Data;
 
             Assert.True(result.ToList()[0].price >= 80 && result.ToList()[0].price <= 100);
+
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByPrice("0-0", "price").Data;
+            Assert.True(noresult == null);
         }
 
         [Fact]
@@ -76,6 +94,9 @@ namespace Hotel_Search_Test
 
             Assert.Equal("Concorde Hotel", result.ToList()[0].name);
 
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByDate("10-100-2020:15-100-2020", "name").Data;
+            Assert.True(noresult == null);
+
         }
 
         [Fact]
@@ -85,6 +106,9 @@ namespace Hotel_Search_Test
             IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByDate("10-10-2020:15-10-2020", "price").Data;
 
             Assert.Equal("Concorde Hotel", result.ToList()[0].name);
+
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> noresult = hotelsController.GetHotelByDate("10-100-2020:15-100-2020", "price").Data;
+            Assert.True(noresult == null);
 
         }
     }
