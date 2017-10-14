@@ -14,7 +14,7 @@ install:
   - ./configure
   - make
   - sudo make install
-  - cd ./ushay20/tajawal_assignment
+  - cd ../../ushay20/tajawal_assignment
 script:
   - xbuild /p:Configuration=Release ./Hotel_Search.sln
   - export LD_LIBRARY_PATH=/usr/local/lib
