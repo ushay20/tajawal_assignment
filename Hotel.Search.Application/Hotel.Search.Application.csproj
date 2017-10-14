@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations.cs" />
-    <Compile Include="CustomClasses\APIResponse.cs" />
+    <Compile Include="CustomClasses\WebServiceResponse.cs" />
     <Compile Include="CustomClasses\DateIndex.cs" />
     <Compile Include="CustomClasses\Hotel.cs" />
     <Compile Include="Enums.cs" />

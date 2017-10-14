@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.Search.Application.CustomClasses
 {
-    public class APIResponse
+    public class WebServiceResponse
     {
         public IEnumerable<Hotel> Data { get; set; }
         public int Status { get; set; }

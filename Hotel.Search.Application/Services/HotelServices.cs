@@ -32,7 +32,7 @@ namespace Hotel.Search.Application.Services
         public IEnumerable<CustomClasses.Hotel> GetHotels(string name = "", string dest ="", string priceRange = "", string dateRange = "")
         {
             IEnumerable<CustomClasses.Hotel> retVal = null;
-            CustomClasses.APIResponse response = APIHelper.Execute(Configurations.API_URL);
+            CustomClasses.WebServiceResponse response = APIHelper.Execute(Configurations.API_URL);
             if (response.Status == (int)StatusEnum.OK)
             {
                 retVal = response.Data;

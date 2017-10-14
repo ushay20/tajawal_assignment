@@ -6,6 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Hotel_Search.Models;
+using Hotel.Search.Application;
 
 namespace Hotel_Search.Controllers
 {
@@ -19,31 +21,87 @@ namespace Hotel_Search.Controllers
         }
 
         [Route("api/hotels/name/{name}/sort/{sort}")]
-        public IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> GetHotelByName(string name, string sort)
+        public SearchResponse GetHotelByName(string name, string sort)
         {
-            var data = HotelServices.Instance.GetHotels(name);
-            return sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+            SearchResponse response = new SearchResponse();
+            response.Status = StatusEnum.OK.ToString();
+
+            try
+            {
+                var data = HotelServices.Instance.GetHotels(name);
+                data = sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+                response.Data = data;
+            }
+            catch(Exception e)
+            {
+                response.Status = StatusEnum.ERROR.ToString();
+                response.ErrorMessage = e.Message;
+            }
+
+            return response;
         }
 
         [Route("api/hotels/destination/{dest}/sort/{sort}")]
-        public IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> GetHotelByDest(string dest, string sort)
+        public SearchResponse GetHotelByDest(string dest, string sort)
         {
-            var data = HotelServices.Instance.GetHotels("", dest);
-            return sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+            SearchResponse response = new SearchResponse();
+            response.Status = StatusEnum.OK.ToString();
+
+            try
+            {
+                var data = HotelServices.Instance.GetHotels("", dest);
+                data = sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+                response.Data = data;
+            }
+            catch (Exception e)
+            {
+                response.Status = StatusEnum.ERROR.ToString();
+                response.ErrorMessage = e.Message;
+            }
+
+            return response;
         }
         
         [Route("api/hotels/price-range/{prange}/sort/{sort}")]
-        public IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> GetHotelByPrice(string prange, string sort)
+        public SearchResponse GetHotelByPrice(string prange, string sort)
         {
-            var data = HotelServices.Instance.GetHotels("", "", prange);
-            return sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+            SearchResponse response = new SearchResponse();
+            response.Status = StatusEnum.OK.ToString();
+
+            try
+            {
+                var data = HotelServices.Instance.GetHotels("", "", prange);
+                data = sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+                response.Data = data;
+            }
+            catch (Exception e)
+            {
+                response.Status = StatusEnum.ERROR.ToString();
+                response.ErrorMessage = e.Message;
+            }
+
+            return response;
         }
 
         [Route("api/hotels/date-range/{drange}/sort/{sort}")]
-        public IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> GetHotelByDate(string drange, string sort)
+        public SearchResponse GetHotelByDate(string drange, string sort)
         {
-            var data = HotelServices.Instance.GetHotels("", "", "", drange);
-            return sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+            SearchResponse response = new SearchResponse();
+            response.Status = StatusEnum.OK.ToString();
+
+            try
+            {
+                var data = HotelServices.Instance.GetHotels("", "", "", drange);
+                data = sort == "name" ? data.OrderBy(a => a.name) : data.OrderBy(a => a.price);
+                response.Data = data;
+            }
+            catch (Exception e)
+            {
+                response.Status = StatusEnum.ERROR.ToString();
+                response.ErrorMessage = e.Message;
+            }
+
+            return response;
         }
     }
 }

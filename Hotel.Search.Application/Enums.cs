@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.Search.Application
 {
-    enum StatusEnum
+    public enum StatusEnum
     {
         OK,
         ERROR

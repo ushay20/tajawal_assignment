@@ -14,7 +14,7 @@ namespace Hotel_Search_Test
         public void TestGetHotelByName()
         {
             HotelsController hotelsController = new HotelsController();
-            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByName("media one hotel", "name");
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByName("media one hotel", "name").Data;
 
             Assert.Equal("media one hotel", result.ToList()[0].name.ToLower());
 
@@ -24,7 +24,7 @@ namespace Hotel_Search_Test
         public void TestGetHotelByDest()
         {
             HotelsController hotelsController = new HotelsController();
-            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByDest("dubai", "name");
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByDest("dubai", "name").Data;
 
             Assert.Equal("dubai", result.ToList()[0].city);
 
@@ -34,7 +34,7 @@ namespace Hotel_Search_Test
         public void GetHotelByPrice()
         {
             HotelsController hotelsController = new HotelsController();
-            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByPrice("80:100", "name");
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByPrice("80:100", "name").Data;
 
             Assert.True(result.ToList()[0].price >= 80 && result.ToList()[0].price <= 100);
 
@@ -44,7 +44,7 @@ namespace Hotel_Search_Test
         public void GetHotelByDate()
         {
             HotelsController hotelsController = new HotelsController();
-            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByDate("10-10-2020:15-10-2020", "name");
+            IEnumerable<Hotel.Search.Application.CustomClasses.Hotel> result = hotelsController.GetHotelByDate("10-10-2020:15-10-2020", "name").Data;
 
             Assert.Equal("Concorde Hotel", result.ToList()[0].name);
 

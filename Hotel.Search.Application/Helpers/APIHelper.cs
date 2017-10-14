@@ -15,9 +15,9 @@ namespace Hotel.Search.Application.Helpers
 {
     public class APIHelper
     {
-        public static CustomClasses.APIResponse Execute(string url)
+        public static CustomClasses.WebServiceResponse Execute(string url)
         {
-            CustomClasses.APIResponse retVal = new CustomClasses.APIResponse();
+            CustomClasses.WebServiceResponse retVal = new CustomClasses.WebServiceResponse();
             retVal.Status = (int)StatusEnum.OK;
             string resStr = string.Empty;
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
